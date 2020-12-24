@@ -5,6 +5,8 @@
 Bienvenido a nuestro Curso avanzado de estadística multivariante con R y Python, donde Elisa Cabana y Juan Gabriel Gomila, dos de los instructores top de Udemy, así como matemáticos y analistas de datos de profesión te traen todo lo que necesitas para analizar datos del mundo multivariante tanto en R como en Python, los dos lenguajes de programación más utilizados de todo el mundo para el análisis de datos, y dos habilidades super solicitadas por las empresas en las ofertas de trabajo de Linkedin.
 
 
+
+
 ## ¿Qué vamos a aprender?
 
 * Empezaremos con el análisis exploratorio para ser capaces de describir y visualizar los datos de las muestras que tenemos. La visualización es importante para entender los datos, así que poder producir gráficos 2D y 3D es sin duda un requisito para poder hacer un correcto análisis multivariante.

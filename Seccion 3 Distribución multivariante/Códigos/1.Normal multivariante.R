@@ -16,9 +16,11 @@ plot(bivn2[,1],bivn2[,2])
 plot(bivn3[,1],bivn3[,2])
 
 # Calcular densidades kernel 
-bivn.kde <- kde2d(bivn[,1], bivn[,2],n=50)   # MASS package
-bivn2.kde <- kde2d(bivn2[,1], bivn2[,2], n = 50)
-bivn3.kde <- kde2d(bivn3[,1], bivn3[,2], n = 50)
+bivn.kde <- kde2d(bivn[,1], bivn[,2],n=150)   # MASS package
+bivn2.kde <- kde2d(bivn2[,1], bivn2[,2], n = 150)
+bivn3.kde <- kde2d(bivn3[,1], bivn3[,2], n = 150)
+
+names(bivn.kde)
 
 # Contour plot 
 image(bivn.kde)       # base graphics package

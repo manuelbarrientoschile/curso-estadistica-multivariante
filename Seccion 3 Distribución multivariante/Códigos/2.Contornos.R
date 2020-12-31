@@ -44,6 +44,7 @@ contour(x.points,y.points,z)
 
 #################################### Example 3
 bivn <- mvrnorm(5000, mu =  c(0,0), Sigma = matrix(c(1, 0, 0, 1), 2) )  # utiliza Mass package
+#esta es una estimacion de la densidad, por lo que ya no es teorica
 bivn.kde <- kde2d(bivn[,1], bivn[,2], n = 50) 
 filled.contour(x = bivn.kde$x, y = bivn.kde$y , z = bivn.kde$z,plot.axes = { axis(1); axis(2); points(0, 0) })
 image(bivn.kde)       # from base graphics package

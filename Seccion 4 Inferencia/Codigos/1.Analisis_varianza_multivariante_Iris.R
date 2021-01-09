@@ -16,12 +16,13 @@ rm(list = ls()) # Borrar todo
 
 Y <- as.data.frame(iris)
 Y
-
+head(Y)
 n <- dim(Y)[1]
 n
 
 
 X <- Y[,1:4]
+head(X)
 p <- dim(X)[2]
 p
 

@@ -43,7 +43,8 @@ mu <- colMeans(X)
 mu
 S <- cov(X)
 S
-
+diag(S)
+sum(diag(S))
 ##################################################################################################################
 # Obtener los componentes principales en base a la matriz de covarianza muestral
 ##################################################################################################################
@@ -53,6 +54,11 @@ eS
 
 eigen.val <- eS$values # Auto-valores
 eigen.val
+sum(eigen.val)
+
+#NOTAR COMO sum(diag(S)) DONDE S ES la matriz de covarianza muestral ENTREGA EL MISMO VALOR QUE
+#sum(eigen.val) LA SUMA DE LOS VALORES PROPIOS
+
 eigen.vec <- eS$vectors # Auto-vectores
 eigen.vec
 prop.var <- eigen.val / sum(eigen.val) # Proporcion de variabilidad
@@ -70,6 +76,8 @@ eR
 
 eigen.val <- eR$values # Auto-valores
 eigen.val
+sum(eigen.val)
+
 eigen.vec <- eR$vectors # Auto-vectores
 eigen.vec
 prop.var <- eigen.val / sum(eigen.val) # Proporcion de variabilidad
@@ -86,6 +94,7 @@ mean(eigen.val) # media de los auto-valores
 ones <- matrix(rep(1,n),nrow=n,ncol=1)
 X.cen <- as.matrix(X) - ones %*% mu
 X.cen
+#arriba la matriz centrada
 
 Dx <- diag(diag(S))
 Dx

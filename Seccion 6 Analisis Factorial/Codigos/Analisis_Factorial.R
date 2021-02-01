@@ -84,7 +84,7 @@ prop.var.accum
 ##################################################################################################################
 
 L.est.1 <- eigen.vec[,1:3] %*% diag(sqrt(eigen.val[1:3]))
-L.est.1
+L.est.1 #este es el A estimado
 
 L.est.1.var <- varimax(L.est.1)
 L.est.1.var
@@ -136,6 +136,8 @@ Psi.est.2
 # Obtengamos los "scores" para ambos métodos
 ##################################################################################################################
 # PCFA
+dim(scale(X))
+dim(as.matrix(L.est.1.var$loadings))
 FS.est.1 <- scale(X) %*% as.matrix(L.est.1.var$loadings)
 FS.est.1
 

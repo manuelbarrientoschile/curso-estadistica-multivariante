@@ -210,3 +210,4 @@ text(princomp(X.s)$scores[,1:2],labels=rownames(X.s),pos = 1,col="blue")
 
 Sil.Diana.Euc <- silhouette(Cl.Diana.Euc,dist.Euc)
 plot(Sil.Diana.Euc,main="Silhouette for Diana",col="blue")
+

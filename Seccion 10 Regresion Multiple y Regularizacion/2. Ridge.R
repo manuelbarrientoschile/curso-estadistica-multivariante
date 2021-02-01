@@ -75,9 +75,9 @@ round(cbind(OLS = coef(ols.regression),
                       as.vector(ridge.model$beta))),4)             
 
 
+summary(ols.regression)
+summary(ridge.model)
 
-
-
-
+names(ridge.model)
 
 

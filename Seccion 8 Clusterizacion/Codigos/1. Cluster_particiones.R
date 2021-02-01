@@ -39,7 +39,7 @@ X.s <- scale(X)
 
 
 Kmeans.3 <- kmeans(X.s,3,nstart=25)
-
+Kmeans.3$cluster
 # SCDG
 
 SCDG <- sum(Kmeans.3$withinss)
